@@ -1,3 +1,24 @@
+:root {
+  --font-family: 'Epilogue', sans-serif;
+  --background-black-color: #141414;
+  --text-white-color: #ffffff;
+  --text-black-color: #141414;
+  --title-black-color: #1E2827;
+}
+
+body {
+  font-family: 'Epilogue', sans-serif;
+  font-style: normal;
+}
+
+.container {
+  width: 100%;
+  padding: 0 20px;
+  margin: 0 auto;
+  /* border: 2px solid red; */
+}
+
+
 /* Reset styles */
 h1,
 h2,
@@ -33,4 +54,45 @@ img {
   display: block;
   max-width: 100%;
   height: auto;
+}
+address {
+  font-style: normal;
+}
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+@media screen and (min-width: 375px) and (max-width: 767px) {
+  .container {
+    width: 375px;
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+}
+
+
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+    padding-right: 32px;
+    padding-left: 32px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .container {
+    width: 1206px;
+    padding-right: 15px;
+    padding-left: 15px;
+  }
 }
