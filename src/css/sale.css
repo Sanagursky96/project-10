@@ -1,0 +1,83 @@
+.section-sale{
+    margin-bottom: 80px;
+    }    
+
+.sale-head{
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 1.25;
+    letter-spacing: -0.02em;    
+    margin-bottom: 40px;
+}
+
+.sale-item:not(:last-child){
+    margin-bottom:40px;;
+}
+
+.sale-img-list{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;       
+}
+
+.sale-photo-container{
+    display: flex;
+    gap: 20px;
+    margin-bottom: 40px;
+}
+
+.sale-item-head{
+    margin-bottom: 8px;
+}
+
+.sale-item-head-one{
+    font-size: 24px;
+line-height: 1;
+letter-spacing: -0.02em;
+}
+
+.sale-item-head-text{
+    font-size: 14px;
+line-height: 1.29;
+letter-spacing: -0.02em;
+color: rgba(20, 20, 20, 0.5);
+margin-bottom: 16px;
+}
+
+.sale-price-one{
+    font-size: 18px;
+line-height: 1.33;
+letter-spacing: -0.02em;
+margin-right: 8px;
+}
+
+.sale-price-two{
+    font-size: 12px;
+    line-height: 1.17;   
+    letter-spacing: -0.02em;
+    text-decoration-line: line-through;    
+    color: rgba(20, 20, 20, 0.5);
+    
+}
+
+.sale-item-head-two{
+    font-size: 18px;
+line-height: 1.33;
+letter-spacing: -0.02em;
+text-transform: uppercase;
+}
+
+.sale-item-head-two::before{
+content:#;
+contain:#;
+border-top: 2px solid #141414;
+border: 2px solid #141414;
+}
+
+@media screen and (min-width: 375px) and (max-width: 767px) {
+    .container {
+      width: 375px;
+      padding-right: 20px;
+      padding-left: 20px;
+    }
+  }
