@@ -20,6 +20,11 @@
     gap: 10px;       
 }
 
+.sale-img-photo{
+    width: 80px;
+    height: 80px;
+}
+
 .sale-photo-container{
     display: flex;
     gap: 20px;
@@ -30,25 +35,55 @@
     margin-bottom: 8px;
 }
 
+.sale-before{
+    position: relative;
+}
+
+.sale-before::before {
+content:"";
+margin-top: 0;
+display: inline-block;
+color: #141414;;
+outline: 1px solid;
+width: 100%;
+}
+
+.sale-before::after{
+    content:"";
+    margin-top: 0;
+    display: inline-block;
+    color: #141414;;
+    outline: 1px solid;
+    width: 16px;
+    position:absolute;   
+    top: 70%; 
+    right:0%;
+    
+}
+
 .sale-item-head-one{
     font-size: 24px;
-line-height: 1;
-letter-spacing: -0.02em;
+    line-height: 1;
+    letter-spacing: -0.02em;
 }
 
 .sale-item-head-text{
     font-size: 14px;
-line-height: 1.29;
-letter-spacing: -0.02em;
-color: rgba(20, 20, 20, 0.5);
-margin-bottom: 16px;
+    line-height: 1.29;
+    letter-spacing: -0.01em;
+    color: rgba(20, 20, 20, 0.5);
+    margin-bottom: 16px;
+}
+
+.sale-item-head-text_code{
+    letter-spacing: -0.02em;
 }
 
 .sale-price-one{
     font-size: 18px;
-line-height: 1.33;
-letter-spacing: -0.02em;
-margin-right: 8px;
+    line-height: 1.33;
+    letter-spacing: -0.02em;
+    margin-right: 8px;
 }
 
 .sale-price-two{
@@ -62,22 +97,45 @@ margin-right: 8px;
 
 .sale-item-head-two{
     font-size: 18px;
-line-height: 1.33;
-letter-spacing: -0.02em;
-text-transform: uppercase;
+    line-height: 1.33;
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
 }
 
-.sale-item-head-two::before{
-content:#;
-contain:#;
-border-top: 2px solid #141414;
-border: 2px solid #141414;
-}
+@media screen and (min-width: 375px) and (max-width: 767px) {   
+  }
 
-@media screen and (min-width: 375px) and (max-width: 767px) {
-    .container {
-      width: 375px;
-      padding-right: 20px;
-      padding-left: 20px;
+  @media screen and (min-width:768px){
+    .sale-list{
+        width: 572px;
+     margin: 0 auto;
+    }
+
+    .sale-img-photo{
+        width: 146px;
+        height: 146px;
+    }
+
+    .sale-img-photo-hero{
+        width: 406px;
+        height: 614px;
+    }
+
+    .sale-item-head-one{
+        font-size: 38px;
+    line-height: 1.05;
+    letter-spacing: -0.02em;
     }
   }
+
+  @media screen and (min-width: 1280px){  
+     .sale-list{
+        width: 981px;
+        display: flex;
+        gap: 40px;
+     }
+   
+     .sale-list-text{
+        width: 369px;
+     }
+}
