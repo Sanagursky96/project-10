@@ -1,0 +1,45 @@
+
+@media screen and (min-width: 375px) and (max-width: 767px) {
+    .container {
+      width: 375px;
+      padding-right: 20px;
+      padding-left: 20px;
+    }
+    
+    .hero {
+    background-color: #141414;
+    }
+    .hero-title {
+      font-weight: 600;
+      font-size: 38px;
+      line-height: 1.05;
+      letter-spacing: -0.04em;
+      color: #FFFFFF;
+      padding-top: 74px;
+      padding-bottom: 60px;
+    }
+    .hero-static-watch {
+      width: 266px;
+      height: 200px;
+      background-color: #1E2827;
+    }
+    .hero-text {
+      font-weight: 300;
+font-size: 14px;
+line-height: 1.29;
+letter-spacing: -0.02em;
+color: #FFFFFF;
+margin-bottom: 40px;
+    }
+    .hero-bottom-image {
+      width: 335px;
+height: 410px;
+padding-bottom: 40px;
+    }
+    .hero-btn-swipe {
+   width: 4.5px;
+height: 9px;
+border: 1px solid rgba(255, 255, 255, 0.5);
+border-radius: 4px;
+    }
+  }
