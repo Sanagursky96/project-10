@@ -44,19 +44,17 @@
       font-size: 40px;
       line-height: 1.1;
       margin-right: 40px;
+      margin-bottom: 0;
     }
     .about-top-text {
       margin-right: 20px;
+      margin-bottom: 0;
       width: 220px;
     }
     .about-bottom-text {
       width: 250px;
     }
-    /* .gif {
-      width: 704px;
-      height: 465px;
-      object-fit: cover;
-    } */
+   
     .about-img {
       width: 704px;
       height: 465px;
@@ -70,6 +68,7 @@
     }
   
     .about-title {
+      line-height: 1.29;
       margin-right: 110px;
     }
     .about-top-text {
