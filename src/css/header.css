@@ -59,10 +59,10 @@
   /* transition-property: transform;
   transition-duration: 300ms; */
 }
-.address:hover,
+/* .address:hover,
 .address:focus {
-  /* transform: scale(1.1); */
-}
+  transform: scale(1.1);
+} */
 
 .header-tel {
   width: 159px;

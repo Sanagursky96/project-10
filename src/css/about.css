@@ -26,6 +26,11 @@
   .about-wrap {
     margin-bottom: 40px;
   }
+  .about-img {
+    width: 335px;
+    height: 365px;
+    object-fit: cover;
+  }
   
   @media screen and (min-width: 768px) {
     .about {
@@ -46,6 +51,15 @@
     }
     .about-bottom-text {
       width: 250px;
+    }
+    /* .gif {
+      width: 704px;
+      height: 465px;
+      object-fit: cover;
+    } */
+    .about-img {
+      width: 704px;
+      height: 465px;
     }
   }
   
