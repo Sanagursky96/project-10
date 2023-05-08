@@ -1,5 +1,6 @@
 .news{
-margin-bottom: 80px;
+padding-top: 80px;
+padding-bottom: 80px;
 }
 
 .news-text{
@@ -30,7 +31,8 @@ margin-bottom: 40px;
 
 @media screen and (min-width: 768px) {
 .news {
-    margin-bottom: 128px;
+    padding-top: 128px;
+    padding-bottom: 128px;
 }
 .news-list {
     flex-direction:row;
@@ -39,7 +41,6 @@ margin-bottom: 40px;
 
 @media screen and (min-width: 1280px) {
 .news{
-    margin-bottom: 0px;
     padding: 80px 0px;
 }
 .news-title{
