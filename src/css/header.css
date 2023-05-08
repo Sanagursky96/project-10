@@ -1,6 +1,7 @@
 .header {
   background-color: var(--background-black-color);
   padding-top: 20px;
+  padding-bottom: 69px;
 }
 
 .header-container {
@@ -16,6 +17,13 @@
 .logo-link {
   display: flex;
   align-items: center;
+  transition-property: transform;
+  transition-duration: 300ms;
+}
+
+.logo-link:hover,
+.logo-link:focus {
+  transform: scale(1.1);
 }
 
 .logo-svg {
@@ -24,9 +32,9 @@
 
 .logo-text {
   font-weight: 400;
-  font-size: 15px;
+  font-size: 12px;
   line-height: calc(15 / 15);
-  letter-spacing: -0.03em;
+  letter-spacing: 0.03em;
   color: var(--text-white-color);
 }
 
@@ -34,24 +42,33 @@
   font-weight: 400;
   font-size: 9px;
   line-height: calc(12 / 9);
+  letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--text-white-color);
+    transition-property: transform;
+  transition-duration: 300ms;
+}
 
-  /* margin-left: 80px; */
+.nav-link:hover,
+.nav-link:focus {
+    transform: scale(1.2);
 }
 
 .address {
+  display: block;
+  /* transition-property: transform;
+  transition-duration: 300ms; */
+}
+.address:hover,
+.address:focus {
+  /* transform: scale(1.1); */
+}
+
+.header-tel {
   width: 159px;
   height: 48px;
   background: #1e2827;
   border-radius: 8px;
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.header-tel {
   font-family: 'Epilogue';
   font-style: normal;
   font-weight: 400;
@@ -59,6 +76,19 @@
   line-height: 12px;
   text-transform: uppercase;
   color: var(--text-white-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border: 1px solid transparent;
+  transition-property: transform, border-color;
+  transition-duration: 300ms;
+}
+
+.header-tel:hover,
+.header-tel:focus {
+  transform: scale(1.1);
+  border-color: #ffffff;
 }
 
 .nav-list {
@@ -95,6 +125,12 @@
     padding: 0;
     width: 24px;
     height: 24px;
+    transition-property: transform;
+    transition-duration: 300ms;
+  }
+  .mobile-menu:hover,
+  .mobile-menu:focus {
+    transform: scale(1.2);
   }
 
   .mobile-menu-container {
@@ -142,10 +178,6 @@
     fill: #ffffff;
   }
 
-  .mobile-menu-list-wrap {
-    
-  }
-
   .mobile-menu-list {
     display: flex;
     flex-direction: column;
@@ -166,6 +198,19 @@
 /* SCREEN 768PX */
 
 @media screen and (min-width: 768px) {
+  .header {
+    padding-bottom: 80px;
+  }
+
+  .logo-svg {
+    width: 19px;
+    height: 19px;
+  
+  }
+
+  .logo-text {
+    font-size: 15px;
+  }
   .mobile-menu {
     display: none;
   }
