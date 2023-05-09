@@ -567,7 +567,7 @@
 .form__buttonsend:hover,
 .form__buttonsend:focus,
 .form__buttonsend:active {
-  transform: scale(1.1);
+  transform: scale(1.05);
   outline: 1px solid #ffffff;
   box-shadow: 0 0 8px 3px rgb(2, 69, 255);
 }
