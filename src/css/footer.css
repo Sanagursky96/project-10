@@ -111,7 +111,7 @@
     font-family: 'Epilogue';
     font-style: normal;
     font-weight: 400;
-    font-size: 12px;
+    font-size: 13px;
     line-height: 1.16;
     color: #C6CDD1;
     opacity: 0.9;
@@ -120,6 +120,7 @@
 .rules-item {
     display: flex;
     gap: 14px;
+    margin-top: 14px;
 }
 
 .footer-rules-text {
@@ -189,11 +190,13 @@
     }
 
     .footer-rules-text {
-        font-size: 14px;
-        line-height: calc(18 / 14);
+        font-size: 13px;
+        line-height: calc(18 / 13);
+        margin-top: 0;
     }
 
     .rules-item {
+        margin-top: 0;
         gap: 18px;
     }
 }
@@ -249,7 +252,7 @@
     }
 
     .rules-text {
-        font-size: 14px;
-        line-height: calc(18 / 14);
+        font-size: 13px;
+        line-height: calc(18 / 13);
     }
 }
