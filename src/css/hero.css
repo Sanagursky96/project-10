@@ -2,6 +2,7 @@
 .hero {
     background-color: var( --background-black-color);
     padding-bottom: 40px;
+    margin-top: -1px;
   }
   
   .hero-title {
