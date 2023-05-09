@@ -129,10 +129,12 @@
     height: 24px;
     transition-property: transform;
     transition-duration: 300ms;
+    /* transition-delay: 10000ms;   */
   }
   .mobile-menu:hover,
-  .mobile-menu:focus {
-    transform: scale(1.2);
+  .mobile-menu:focus
+  .mobile-menu:active {
+    transform: scale(1.5);
   }
 
   .mobile-menu-container {
@@ -149,15 +151,18 @@
     visibility: hidden;
     pointer-events: none;
 
-    transform: translateY(-100%);
+    transform: translateX(100%);
     transition-property: transform;
     transition-duration: 450ms;
+    transition-delay: 200ms;  
+
+    /* transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275); */
   }
   .mobile-menu-container.is-open {
     opacity: 1;
     visibility: visible;
     pointer-events: auto;
-    transform: translateY(0);
+    transform: translateX(0);
   }
   .main-wrap {
     max-width: 335px;

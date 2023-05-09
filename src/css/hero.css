@@ -1,8 +1,210 @@
-/* .hero-wrap {
-    width: 436px;
-    height: 255px;
-    background-color: #1E2827;
+/* -------------------------Mobile------------------------ */
+.hero {
+    background-color: var( --background-black-color);
+    padding-bottom: 40px;
+  }
+  
+  .hero-title {
+    font-weight: 600;
+    font-size: 38px;
+    line-height: 1.05;
+    letter-spacing: -0.04em;
+    color: var(--text-white-color);
+    margin-bottom: 60px;
+  }
+  
+  /* Swiper */
+  .swiper {
+    position: relative;
+    margin-bottom: 40px;
+    margin-left: 0;
+    width: 266px;
+  }
+  
+  .swiper-wrapper {
+    margin-bottom: 20px;
+  }
+  
+  /* Swiper btns */
+  .swiper-btn-container {
+    display: flex;
+    gap: 12px;
+  }
+  .swiper-svg {
+    stroke: rgba(255, 255, 255, 0.5);
+    fill: transparent;
     display: flex;
     justify-content: center;
     align-items: center;
-} */
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .swiper-btn {
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 8px;
+    background-color: transparent;
+    width: 32px;
+    height: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .swiper-btn:hover,
+  .swiper-btn:focus {
+    border: 1px solid #ffffff;
+  }
+  .swiper-btn:hover > .swiper-svg,
+  .swiper-btn:focus > .swiper-svg {
+    stroke: #ffffff;
+  }
+  /* Swiper counter */
+  .swiper-count {
+    font-size: 14px;
+    line-height: 1.2;
+    letter-spacing: -0.02em;
+    color: var(--text-white-color);
+  }
+  .swiper-counter {
+    display: flex;
+    gap: 6px;
+  }
+  .swiper-count {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+  }
+  .line::before {
+    content: '';
+    display: block;
+    width: 32px;
+    height: 1px;
+    border: 1px solid #ffffff;
+  }
+  .swiper-num {
+    position: absolute;
+    right: 60px;
+    bottom: -45px;
+    font-size: 14px;
+    line-height: 1.29;
+    letter-spacing: -0.02em;
+    color: var(--text-white-color);
+  }
+  .swiper-elements {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  /* Hero Text */
+  .hero-text-container {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 40px;
+  }
+  .hero-text {
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 1.2;
+    letter-spacing: -0.02em;
+    color: var(--text-white-color);
+    width: 248px;
+  }
+  
+  /*  Tablet Media */
+  @media screen and (min-width: 768px) {
+    .hero {
+      padding-bottom: 64px;
+    }
+    .hero .container {
+      width: 734px;
+      padding-right: 15px;
+      padding-left: 15px;
+    }
+    .hero-title {
+      font-weight: 600;
+      font-size: 60px;
+      line-height: 1.03;
+      width: 653px;
+      margin-bottom: 60px;
+    }
+    .hero-text-container {
+      display: flex;
+      align-items: center;
+    }
+    .swiper {
+      width: 436px;
+      margin-bottom: 40px;
+    }
+  
+    .swiper-num {
+      position: absolute;
+      right: 60px;
+      bottom: -50px;
+    }
+  
+    .slider-text-container {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+    }
+    .swiper-btn {
+      width: 40px;
+      height: 40px;
+    }
+  
+    .line::before {
+      width: 40px;
+    }
+    .swiper-num {
+      right: 68px;
+    }
+    .hero-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0 20px;
+    }
+  }
+  
+  /* Desktop Media */
+  @media screen and (min-width: 1280px) {
+    .hero .container {
+      width: 1206px;
+      padding-right: 15px;
+      padding-left: 15px;
+      gap: 0;
+    }
+    .hero-title {
+      width: 750px;
+      margin-bottom: 42px;
+    }
+    .hero-text {
+      width: 282px;
+      text-align: justify;
+    }
+  
+    .hero-text-container {
+      order: -1;
+      align-items: flex-start;
+      margin-bottom: 0;
+    }
+    .hero-title-container {
+      order: -1;
+    }
+    .hero-container {
+      justify-content: space-between;
+    }
+    .swiper {
+      margin-bottom: 0;
+    }
+  
+    .swiper-container {
+      display: flex;
+      align-items: flex-end;
+    }
+  
+    .hero-picture {
+      height: 394px;
+    }
+  }
+  

@@ -1,5 +1,239 @@
-<!-- <section>
-    <div class="hero-wrap">
-        <img src="../img/hero/test.png" alt="">
+<section class="hero">
+  <div class="container">
+    <div class="hero-container">
+      <!-- Hero-Title -->
+      <div class="hero-title-container">
+        <h1 class="hero-title">Welcome to our collection of premium watches</h1>
+      </div>
+
+      <!-- Slider -->
+      <div class="swiper-container">
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide">
+              <picture>
+                <source
+                  srcset="
+                    /img/hero/desk-swiper-1.jpg    1x,
+                    /img/hero/desk-swiper-1-2x.jpg 2x
+                  "
+                  media="(min-width: 1280px)"
+                />
+                <source
+                  srcset="
+                    /img/hero/desk-swiper-1.jpg    1x,
+                    /img/hero/desk-swiper-1-2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    /img/hero/mob-swiper-1.jpg    1x,
+                    /img/hero/mob-swiper-1-2x.jpg 2x
+                  "
+                  media="(min-width: 375px)"
+                />
+                <img
+                  src="/img/hero/mob-swiper-1.jpg"
+                  alt="Photo of a watch"
+                  width="436"
+                />
+              </picture>
+              <p class="swiper-num">01</p>
+            </div>
+            <div class="swiper-slide">
+              <picture>
+                <source
+                  srcset="
+                    /img/hero/desk-swiper-2.jpg    1x,
+                    /img/hero/desk-swiper-2-2x.jpg 2x
+                  "
+                  media="(min-width: 1280px)"
+                />
+                <source
+                  srcset="
+                    /img/hero/desk-swiper-2.jpg    1x,
+                    /img/hero/desk-swiper-2-2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    /img/hero/mob-swiper-2.jpg    1x,
+                    /img/hero/mob-swiper-2-2x.jpg 2x
+                  "
+                  media="(min-width: 375px)"
+                />
+                <img
+                  src="/img/hero/mob-swiper-2.jpg"
+                  alt="Photo of a watch"
+                  width="436"
+                />
+              </picture>
+              <p class="swiper-num">02</p>
+            </div>
+            <div class="swiper-slide">
+              <picture>
+                <source
+                  srcset="
+                    /img/hero/desk-swiper-3.jpg    1x,
+                    /img/hero/desk-swiper-3-2x.jpg 2x
+                  "
+                  media="(min-width: 1280px)"
+                />
+                <source
+                  srcset="
+                    /img/hero/desk-swiper-3.jpg    1x,
+                    /img/hero/desk-swiper-3-2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    /img/hero/mob-swiper-3.jpg    1x,
+                    /img/hero/mob-swiper-3-2x.jpg 2x
+                  "
+                  media="(min-width: 375px)"
+                />
+                <img
+                  src="/img/hero/mob-swiper-3.jpg"
+                  alt="Photo of a watch"
+                  width="436"
+                />
+              </picture>
+              <p class="swiper-num">03</p>
+            </div>
+            <div class="swiper-slide">
+              <picture>
+                <source
+                  srcset="
+                    /img/hero/desk-swiper-4.jpg    1x,
+                    /img/hero/desk-swiper-4-2x.jpg 2x
+                  "
+                  media="(min-width: 1280px)"
+                />
+                <source
+                  srcset="
+                    /img/hero/desk-swiper-4.jpg    1x,
+                    /img/hero/desk-swiper-4-2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    /img/hero/mob-swiper-4.jpg    1x,
+                    /img/hero/mob-swiper-4-2x.jpg 2x
+                  "
+                  media="(min-width: 375px)"
+                />
+                <img
+                  src="/img/hero/mob-swiper-4.jpg"
+                  alt="Photo of a watch"
+                  width="436"
+                />
+              </picture>
+              <p class="swiper-num">04</p>
+            </div>
+            <div class="swiper-slide">
+              <picture>
+                <source
+                  srcset="
+                    /img/hero/desk-swiper-5.jpg    1x,
+                    /img/hero/desk-swiper-5-2x.jpg 2x
+                  "
+                  media="(min-width: 1280px)"
+                />
+                <source
+                  srcset="
+                    /img/hero/desk-swiper-5.jpg    1x,
+                    /img/hero/desk-swiper-5-2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    /img/hero/mob-swiper-5.jpg    1x,
+                    /img/hero/mob-swiper-5-2x.jpg 2x
+                  "
+                  media="(min-width: 375px)"
+                />
+                <img
+                  src="/img/hero/mob-swiper-5.jpg"
+                  alt="Photo of a watch"
+                  width="436"
+                />
+              </picture>
+              <p class="swiper-num">05</p>
+            </div>
+          </div>
+
+          <!-- If we need navigation buttons -->
+          <div class="swiper-elements">
+            <div class="swiper-btn-container">
+              <div class="button-prev">
+                <button class="swiper-btn">
+                  <svg class="swiper-svg" width="32" height="32">
+                    <use href="./img/sprite/sprite.svg#icon-chevron-left"></use>
+                  </svg>
+                </button>
+              </div>
+              <div class="button-next">
+                <button class="swiper-btn">
+                  <svg class="swiper-svg" width="24" height="24">
+                    <use
+                      href="./img/sprite/sprite.svg#icon-chevron-right"
+                    ></use>
+                  </svg>
+                </button>
+              </div>
+            </div>
+
+            <div class="swiper-counter">
+              <!-- <p class="swiper-count">01</p> -->
+              <p class="swiper-count line">05</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Hero-Text -->
+      <div class="hero-text-container">
+        <p class="hero-text">
+          Our watches are not just timepieces, but also an expression of your
+          personality and lifestyle. From classic designs to modern ones, we
+          have a watch to suit every taste and occasion.
+        </p>
+      </div>
+      <!-- Hero-Picture -->
+      <div class="picture-">
+        <picture class="picture">
+          <source
+            srcset="
+              /img/hero/desk-hero-img.jpg    1x,
+              /img/hero/desk-hero-img-2x.jpg 2x
+            "
+            media="(min-width: 1280px)"
+          />
+          <source
+            srcset="
+              /img/hero/tab-hero-img.jpg   1x,
+              img/hero/tab-hero-img-2x.jpg 2x
+            "
+            media="(min-width: 768px)"
+          />
+          <source
+            srcset="/img/hero/hero-img.jpg 1x, /img/hero/hero-img-2x.jpg 2x"
+            media="(min-width: 375px)"
+          />
+          <img
+            src="/img/hero/hero-img.jpg"
+            alt="Photo of a watch"
+            width="704"
+            height="410"
+            class="hero-picture"
+          />
+        </picture>
+      </div>
     </div>
-</section> -->
+  </div>
+</section>
