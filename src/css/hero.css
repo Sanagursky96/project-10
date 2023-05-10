@@ -1,211 +1,256 @@
-/* -------------------------Mobile------------------------ */
-.hero {
-    background-color: var( --background-black-color);
-    padding-bottom: 40px;
-    margin-top: -1px;
+h1 {
+  padding: 0;
+  margin: 0;
+}
+
+.section-hero {
+  background-color: #141414;
+  padding-bottom:40px;
+}
+
+.container-section-hero {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.hero-title {
+  width: 335px;
+  font-family: 'Epilogue';
+  font-weight: 600;
+  font-size: 38px;
+  line-height: 1.052;
+  letter-spacing: -0.04em;
+  color: #ffffff;
+  margin-bottom: 60px;
+}
+/* img {
+  padding: 0;
+  margin: auto;
+} */
+
+.swiper-section-slider {
+  margin-bottom: 40px;
+  position: relative;
+  float: left;
+  z-index: 2;
+}
+
+.swiper-frame {
+  margin-bottom: 20px;
+}
+
+.swiper {
+  width: 266px;
+}
+
+.swiper-buttons {
+  display: flex;
+  justify-content: flex-start;
+  gap: 12px;
+}
+.previous-button,
+.next-button {
+  width: 32px;
+  height: 32px;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 8px;
+}
+
+.next-button .next-btn-svg {
+  stroke: rgba(255, 255, 255, 0.5);
+  fill: #141414;
+  width: 4.5px;
+  height: 9px;
+}
+.previous-button .previous-btn-svg {
+  stroke: rgba(255, 255, 255, 0.5);
+  fill: #141414;
+}
+.next-button:focus .next-btn-svg {
+  stroke: #ffffff;
+}
+.previous-button:focus .previous-btn-svg {
+  stroke: #ffffff;
+}
+
+.previous-button:focus {
+  border: 1px solid #ffffff;
+}
+.next-button:focus {
+  border: 1px solid #ffffff;
+}
+
+.next-button:hover {
+  animation: shake-bottom 0.8s cubic-bezier(0.455, 0.03, 0.515, 0.955) both;
+  cursor: pointer;
+}
+
+.previous-button:hover {
+  animation: shake-bottom 0.8s cubic-bezier(0.455, 0.03, 0.515, 0.955) both;
+  cursor: pointer;
+}
+
+/* @keyframes shake-bottom {
+  0%,
+  100% {
+    transform: rotate(0deg);
+    transform-origin: 50% 100%;
   }
-  
+  10% {
+    transform: rotate(2deg);
+  }
+  20%,
+  40%,
+  60% {
+    transform: rotate(-4deg);
+  }
+  30%,
+  50%,
+  70% {
+    transform: rotate(4deg);
+  }
+  80% {
+    transform: rotate(-2deg);
+  }
+  90% {
+    transform: rotate(2deg);
+  }
+} */
+
+.swiper-btn-and-numeros {
+  display: flex;
+  justify-content: start;
+}
+
+.pagination-style {
+  color: #ffffff;
+  width: 74px;
+  font-size: 14px;
+  line-height: 1.29;
+  letter-spacing: -0.02em;
+  position: absolute;
+  bottom: 0;
+  left: 192px;
+  display: flex;
+  align-items: center;
+}
+
+.swiper-dash {
+  border: 1px solid #ffffff;
+  width: 32px;
+  margin: 0 6px;
+}
+
+.swiper-buttons .previous-button,
+.next-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.previous-btn-svg {
+  width: 4.5px;
+  height: 9px;
+}
+
+.hero-text {
+  width: 248px;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 1.29;
+  letter-spacing: -0.02em;
+  color: #ffffff;
+  margin: 0 0 40px auto;
+  font-style: normal;
+}
+
+.hero-watch-hand {
+  width: 335px;
+}
+
+/* --Media Screen Tablet--  */
+
+@media screen and (min-width: 768px) {
+  .container-section-hero {
+    align-items: center;
+  }
+
+  .section-hero {
+    padding-bottom:64px;
+  }
+
   .hero-title {
-    font-weight: 600;
-    font-size: 38px;
-    line-height: 1.05;
-    letter-spacing: -0.04em;
-    color: var(--text-white-color);
-    margin-bottom: 60px;
+    width: 653px;
+    font-size: 60px;
+    line-height: 1.033;
   }
-  
-  /* Swiper */
+
   .swiper {
-    position: relative;
-    margin-bottom: 40px;
-    margin-left: 0;
-    width: 266px;
+    width: 436px;
   }
-  
-  .swiper-wrapper {
-    margin-bottom: 20px;
+
+  .previous-button,
+  .next-button {
+    width: 40px;
+    height: 40px;
   }
-  
-  /* Swiper btns */
-  .swiper-btn-container {
-    display: flex;
-    gap: 12px;
+
+  .next-button .next-btn-svg {
+    width: 6px;
+    height: 12px;
   }
-  .swiper-svg {
-    stroke: rgba(255, 255, 255, 0.5);
-    fill: transparent;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  .previous-button .previous-btn-svg {
+    width: 6px;
+    height: 12px;
   }
-  .swiper-btn {
-    border: 1px solid rgba(255, 255, 255, 0.5);
-    border-radius: 8px;
-    background-color: transparent;
-    width: 32px;
-    height: 32px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  .pagination-style {
+    width: 82px;
+    left: 354px;
   }
-  .swiper-btn:hover,
-  .swiper-btn:focus {
-    border: 1px solid #ffffff;
+
+  .swiper-dash {
+    width: 40px;
   }
-  .swiper-btn:hover > .swiper-svg,
-  .swiper-btn:focus > .swiper-svg {
-    stroke: #ffffff;
-  }
-  /* Swiper counter */
-  .swiper-count {
-    font-size: 14px;
-    line-height: 1.2;
-    letter-spacing: -0.02em;
-    color: var(--text-white-color);
-  }
-  .swiper-counter {
-    display: flex;
-    gap: 6px;
-  }
-  .swiper-count {
-    display: flex;
-    align-items: center;
-    gap: 6px;
-  }
-  .line::before {
-    content: '';
-    display: block;
-    width: 32px;
-    height: 1px;
-    border: 1px solid #ffffff;
-  }
-  .swiper-num {
-    position: absolute;
-    right: 60px;
-    bottom: -45px;
-    font-size: 14px;
-    line-height: 1.29;
-    letter-spacing: -0.02em;
-    color: var(--text-white-color);
-  }
-  .swiper-elements {
-    display: flex;
-    justify-content: space-between;
-  }
-  
-  /* Hero Text */
-  .hero-text-container {
-    display: flex;
-    justify-content: flex-end;
-    margin-bottom: 40px;
-  }
+
   .hero-text {
-    font-weight: 300;
-    font-size: 14px;
-    line-height: 1.2;
-    letter-spacing: -0.02em;
-    color: var(--text-white-color);
-    width: 248px;
+    margin-bottom: 100px;
   }
-  
-  /*  Tablet Media */
-  @media screen and (min-width: 768px) {
-    .hero {
-      padding-bottom: 64px;
-    }
-    .hero .container {
-      width: 734px;
-      padding-right: 15px;
-      padding-left: 15px;
-    }
-    .hero-title {
-      font-weight: 600;
-      font-size: 60px;
-      line-height: 1.03;
-      width: 653px;
-      margin-bottom: 60px;
-    }
-    .hero-text-container {
-      display: flex;
-      align-items: center;
-    }
-    .swiper {
-      width: 436px;
-      margin-bottom: 40px;
-    }
-  
-    .swiper-num {
-      position: absolute;
-      right: 60px;
-      bottom: -50px;
-    }
-  
-    .slider-text-container {
-      display: flex;
-      align-items: center;
-      gap: 20px;
-    }
-    .swiper-btn {
-      width: 40px;
-      height: 40px;
-    }
-  
-    .line::before {
-      width: 40px;
-    }
-    .swiper-num {
-      right: 68px;
-    }
-    .hero-container {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 0 20px;
-    }
+
+  .hero-watch-hand {
+    width: 704px;
   }
-  
-  /* Desktop Media */
-  @media screen and (min-width: 1280px) {
-    .hero .container {
-      width: 1206px;
-      padding-right: 15px;
-      padding-left: 15px;
-      gap: 0;
-    }
-    .hero-title {
-      width: 750px;
-      margin-bottom: 42px;
-    }
-    .hero-text {
-      width: 282px;
-      text-align: justify;
-    }
-  
-    .hero-text-container {
-      order: -1;
-      align-items: flex-start;
-      margin-bottom: 0;
-    }
-    .hero-title-container {
-      order: -1;
-    }
-    .hero-container {
-      justify-content: space-between;
-    }
-    .swiper {
-      margin-bottom: 0;
-    }
-  
-    .swiper-container {
-      display: flex;
-      align-items: flex-end;
-    }
-  
-    .hero-picture {
-      height: 394px;
-    }
+}
+
+/* --Media Screen PC--  */
+
+@media screen and (min-width: 1280px) {
+  .section-hero {
+    padding-bottom: 80px;
   }
-  
+  .hero-title {
+    width: 750px;
+    margin-bottom: 43px;
+  }
+
+  .container-section-hero {
+    position: relative;
+  }
+
+  .swiper-section-slider {
+    position: absolute;
+    top: 246px;
+    margin: 0;
+    padding: 0;
+  }
+
+  .hero-text {
+    width: 282px;
+    margin-bottom: 77px;
+  }
+
+  .hero-watch-hand {
+    margin-left: auto;
+    max-width: 676px;
+  }
+}

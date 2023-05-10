@@ -132,7 +132,15 @@ width: 100%;
     }
   }
 
-  @media screen and (min-width: 1280px){  
+  @media screen and (min-width: 1280px){ 
+    
+    .sale-photo-container {
+        margin-bottom: 0;
+    }
+
+    .sale-item:not(:last-child) {
+        margin-bottom: 0;
+    }
     .section-sale{
         padding-bottom: 160px;
         } 
