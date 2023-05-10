@@ -18,13 +18,15 @@
     background-image: url();
 }*/
 
-.footer-contact-logo {
+.footer-logo-svg {
   transition-property: transform;
+  /* transition-property: rotate; */
   transition-duration: 300ms;
 }
-.footer-contact-logo:hover,
-.footer-contact-logo:focus {
-  transform: scale(1.2);
+.footer-logo-svg:hover,
+.footer-logo-svg:focus {
+  transform: scale(1.3);
+  /* transform: rotate(360deg); */
 }
 
 .footer-map {
