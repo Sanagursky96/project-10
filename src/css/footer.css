@@ -18,6 +18,15 @@
     background-image: url();
 }*/
 
+.footer-contact-logo {
+  transition-property: transform;
+  transition-duration: 300ms;
+}
+.footer-contact-logo:hover,
+.footer-contact-logo:focus {
+  transform: scale(1.2);
+}
+
 .footer-map {
   font-size: 14px;
   line-height: 1.28;
@@ -84,19 +93,18 @@
 
 /*  СОЦ.МЕРЕЖІ */
 
-.footer-menu {
-  margin: 0;
-}
-
 .footer-contact-item {
   margin-top: 40px;
+}
+
+.footer-menu {
+  margin-top: 40px;
+  margin-bottom: 80px;
 }
 
 .footer-menu-item {
   display: flex;
   gap: 14px;
-  margin-top: 40px;
-  margin-bottom: 80px;
 }
 
 .footer-menu-list {
@@ -109,7 +117,7 @@
 
 .footer-icon {
   position: absolute;
-  margin: 8px;
+  margin: 7px;
   fill: #efefef;
 }
 
@@ -144,7 +152,6 @@
   line-height: 1.16;
   text-align: right;
   letter-spacing: -0.02em;
-  margin-top: 14px;
   color: #c6cdd1;
   opacity: 0.9;
 }
@@ -171,7 +178,13 @@
     padding-bottom: 20px;
   }
 
+  .footer-menu {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
   .footer-menu-item {
+    gap: 16px;
     margin-top: 0;
     margin-bottom: 0;
   }
@@ -184,8 +197,12 @@
     font-size: 14px;
   }
 
-  .footer-media-item {
+  .footer-media {
     margin-right: 142px;
+  }
+
+  .footer-media-item {
+    gap: 18px;
   }
 
   .footer-link-phone {
@@ -239,8 +256,12 @@
     gap: 355px;
   }
 
-  .footer-media-item {
-    margin-right: 355px;
+  .footer-media {
+    margin-right: 367px;
+  }
+
+  .footer-icon {
+    margin: 9px;
   }
 
   .footer-media-link {
