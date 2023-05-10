@@ -6,6 +6,7 @@ h1 {
 .section-hero {
   background-color: #141414;
   padding-bottom:40px;
+  margin-top: -1px;
 }
 
 .container-section-hero {
