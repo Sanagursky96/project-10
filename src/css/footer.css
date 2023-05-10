@@ -18,6 +18,15 @@
     background-image: url();
 }*/
 
+.footer-contact-logo {
+  transition-property: transform;
+  transition-duration: 300ms;
+}
+.footer-contact-logo:hover,
+.footer-contact-logo:focus {
+  transform: scale(1.2);
+}
+
 .footer-map {
   font-size: 14px;
   line-height: 1.28;
@@ -109,7 +118,7 @@
 
 .footer-icon {
   position: absolute;
-  margin: 8px;
+  margin: 7px;
   fill: #efefef;
 }
 
@@ -144,7 +153,6 @@
   line-height: 1.16;
   text-align: right;
   letter-spacing: -0.02em;
-  margin-top: 14px;
   color: #c6cdd1;
   opacity: 0.9;
 }
@@ -172,6 +180,7 @@
   }
 
   .footer-menu-item {
+    gap: 16px;
     margin-top: 0;
     margin-bottom: 0;
   }
@@ -185,6 +194,7 @@
   }
 
   .footer-media-item {
+    gap: 18px;
     margin-right: 142px;
   }
 
@@ -241,6 +251,10 @@
 
   .footer-media-item {
     margin-right: 355px;
+  }
+
+  .footer-icon {
+    margin: 9px;
   }
 
   .footer-media-link {
