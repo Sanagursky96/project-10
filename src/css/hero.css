@@ -4,6 +4,10 @@ h1 {
 }
 
 .section-hero {
+  margin-bottom: -1px;
+}
+
+.section-hero {
   background-color: #141414;
   padding-bottom:40px;
   margin-top: -1px;
