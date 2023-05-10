@@ -93,19 +93,18 @@
 
 /*  СОЦ.МЕРЕЖІ */
 
-.footer-menu {
-  margin: 0;
-}
-
 .footer-contact-item {
   margin-top: 40px;
+}
+
+.footer-menu {
+  margin-top: 40px;
+  margin-bottom: 80px;
 }
 
 .footer-menu-item {
   display: flex;
   gap: 14px;
-  margin-top: 40px;
-  margin-bottom: 80px;
 }
 
 .footer-menu-list {
@@ -179,6 +178,11 @@
     padding-bottom: 20px;
   }
 
+  .footer-menu {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
   .footer-menu-item {
     gap: 16px;
     margin-top: 0;
@@ -193,9 +197,12 @@
     font-size: 14px;
   }
 
+  .footer-media {
+    margin-right: 142px;
+  }
+
   .footer-media-item {
     gap: 18px;
-    margin-right: 142px;
   }
 
   .footer-link-phone {
@@ -249,8 +256,8 @@
     gap: 355px;
   }
 
-  .footer-media-item {
-    margin-right: 355px;
+  .footer-media {
+    margin-right: 367px;
   }
 
   .footer-icon {
