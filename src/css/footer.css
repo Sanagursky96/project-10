@@ -131,7 +131,7 @@
     line-height: 1.16;
     text-align: right;
     letter-spacing: -0.02em;
-    margin-top: 14px;
+    /*margin-top: 14px;*/
     color: #C6CDD1;
     opacity: 0.9;
 }
@@ -163,6 +163,7 @@
     }
 
     .footer-menu-item {
+        gap: 16px;
         margin-top: 0;
         margin-bottom: 0;
     }
@@ -176,6 +177,7 @@
     }
 
     .footer-media-item {
+        gap: 18px;
         margin-right: 142px;
     }
 
