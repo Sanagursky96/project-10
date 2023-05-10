@@ -1,5 +1,5 @@
 .section-sale{
-    margin-bottom: 80px;
+    padding-bottom: 80px;
     }    
 
 .sale-head{
@@ -106,6 +106,10 @@ width: 100%;
   }
 
   @media screen and (min-width:768px){
+
+    .section-sale{
+        padding-bottom: 128px;
+        } 
     .sale-list{
         width: 572px;
      margin: 0 auto;
@@ -129,6 +133,9 @@ width: 100%;
   }
 
   @media screen and (min-width: 1280px){  
+    .section-sale{
+        padding-bottom: 160px;
+        } 
      .sale-list{
         width: 981px;
         display: flex;

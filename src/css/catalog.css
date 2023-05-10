@@ -1,7 +1,7 @@
 /* CATALOG SECTION */
 
 .section-catalog {
-  padding-bottom: 40px;
+  padding-bottom: 0;
   overflow: hidden;
 }
 
@@ -167,7 +167,7 @@
 @media screen and (min-width: 768px) {
   .section-catalog {
     padding-top: 0;
-    padding-bottom: 64px;
+    padding-bottom: 0;
   }
 
   .title-catalog {
