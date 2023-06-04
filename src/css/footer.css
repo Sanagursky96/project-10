@@ -125,7 +125,7 @@
 
 .media-contact {
   display: flex;
-  gap: 136px;
+  gap: 80px;
 }
 
 /* ДОД.ІНФОРМЦІЯ */
@@ -166,6 +166,10 @@
     padding-right: 20px;
     padding-left: 20px;
   }
+
+  .media-contact {
+    gap: 136px;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -191,16 +195,16 @@
     margin-bottom: 0;
   }
 
-  .media-contact {
-    gap: 142px;
-  }
-
   .footer-map {
     font-size: 14px;
   }
 
   .footer-media {
     margin-right: 142px;
+  }
+
+  .media-contact {
+    gap: 142px;
   }
 
   .footer-media-item {
